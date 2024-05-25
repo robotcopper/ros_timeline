@@ -6,7 +6,7 @@ This repo consists of a `.tex` file that generates a dependency graph for Ubuntu
 
 ## Background
 
-The initial project was created by [**IamPhytan**](https://github.com/IamPhytan) and available [here](https://gist.github.com/IamPhytan/fa76e3325d95688c63658a1ceee8c492), who established the relationships between Ubuntu versions and ROS/ROS2 versions. I have made modifications and additions to include the dependencies with Gazebo and Ignition.
+The initial project was created by [**IamPhytan**](https://github.com/IamPhytan), available [here](https://gist.github.com/IamPhytan/fa76e3325d95688c63658a1ceee8c492), who established the relationships between Ubuntu versions and ROS/ROS2 versions. I have made modifications and additions to include the dependencies with Gazebo and Ignition.
 
 ## Features
 
@@ -15,7 +15,7 @@ The initial project was created by [**IamPhytan**](https://github.com/IamPhytan)
 
 ## Editing Tools
 
-The graph, was edited with:
+The graph was edited with:
 
 - An online LaTeX editor, Overleaf.
 
@@ -37,7 +37,7 @@ The graph, was edited with:
 ## Project Structure
 
 - `ros_timeline.tex`: The main file containing the LaTeX code to generate the graph.
-- `assets`: The folder, providing all the illustrations.
+- `assets`: The folder containing all the illustrations.
 
 ## Acknowledgements
 
@@ -45,6 +45,6 @@ Thanks to **IamPhytan** for the initial work on the project.
 
 ## License
 
-The modifications made on **IamPhytan** work are licensed under the [BSD 3-Clause License](LICENSE).
+The modifications made to **IamPhytan**'s work are licensed under the [BSD 3-Clause License](LICENSE).
 
 ---
