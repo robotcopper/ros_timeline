@@ -1,12 +1,12 @@
 # ros_timeline
 
-This project consists of a `.tex` file that generates a dependency graph for Ubuntu, Gazebo, and Ignition with the versions of ROS and ROS2.
+This repo consists of a `.tex` file that generates a dependency graph for Ubuntu, Gazebo, and Ignition with the versions of ROS and ROS2.
 
-![text](ros_timeline.png)
+![ROS Timeline Dependency Graph](ros_timeline.png)
 
 ## Background
 
-The initial project was created by **IamPhytan** and available [here](https://gist.github.com/IamPhytan/fa76e3325d95688c63658a1ceee8c492), who established the relationships between Ubuntu versions and ROS/ROS2 versions. I have made modifications and additions to include the dependencies with Gazebo and Ignition.
+The initial project was created by [**IamPhytan**](https://github.com/IamPhytan) and available [here](https://gist.github.com/IamPhytan/fa76e3325d95688c63658a1ceee8c492), who established the relationships between Ubuntu versions and ROS/ROS2 versions. I have made modifications and additions to include the dependencies with Gazebo and Ignition.
 
 ## Features
 
