@@ -107,7 +107,7 @@
     white background,
   ]
   \node(year) at (\xLogo, 0) {\textbf{Year}};
-  \foreach \x in {0,2,...,16}
+  \foreach \x in {0,2,...,20}
   \pgfmathtruncatemacro{\year}{\x/2+2016}
   \node (\year) at (\x,0) {\textbf{\year}};
 
@@ -120,10 +120,12 @@
   \distrubuntu{focal}{2020};
   \distrubuntu{jammy}{2022};
   \distrubuntu{noble}{2024};
+  \distrubuntu{resolute}{2026};
   \draw[timeline, UbuntuPurple] (xenial) -- (bionic);
   \draw[timeline, UbuntuPurple] (bionic) -- (focal);
   \draw[timeline, UbuntuPurple] (focal) -- (jammy);
   \draw[timeline, UbuntuPurple] (jammy) -- (noble);
+  \draw[timeline, UbuntuPurple] (noble) -- (resolute);
 
   % ros
   \node[inner sep=0pt] (ros) at (\xLogo,-2.5) {
@@ -146,10 +148,14 @@
   \distrrostwo{humble}{2022}
   \distrrostwo{iron}{2023}
   \distrrostwo{jazzy}{2024}
+  \distrrostwo{kilted}{2025}
+  \distrrostwo{lyrical}{2026}
   \draw[timeline, ROSBlue] (foxy) -- (galactic);
   \draw[timeline, ROSBlue] (galactic) -- (humble);
   \draw[timeline, ROSBlue] (humble) -- (iron);
   \draw[timeline, ROSBlue] (iron) -- (jazzy);
+  \draw[timeline, ROSBlue] (jazzy) -- (kilted);
+  \draw[timeline, ROSBlue] (kilted) -- (lyrical);
 
   \begin{scope}[opacity=0.75]
     \def\eloquentYear{2019}
@@ -202,9 +208,13 @@
   \ignitionversion{\textcolor{IgnitionDarkOrange}{edifice}}{2021}
   \ignitionversion{\textcolor{IgnitionDarkOrange}{fortress}}{2022}
   \ignitionversion{\textcolor{IgnitionDarkOrange}{harmonic}}{2024}
+  \ignitionversion{\textcolor{IgnitionDarkOrange}{ionic}}{2025}
+  \ignitionversion{\textcolor{IgnitionDarkOrange}{jetty}}{2026}
   \draw[timeline, IgnitionLightOrange] (Ignition2020) -- (Ignition2021);
   \draw[timeline, IgnitionLightOrange] (Ignition2021) -- (Ignition2022);
   \draw[timeline, IgnitionLightOrange] (Ignition2022) -- (Ignition2024);
+  \draw[timeline, IgnitionLightOrange] (Ignition2024) -- (Ignition2025);
+  \draw[timeline, IgnitionLightOrange] (Ignition2025) -- (Ignition2026);
 
 \end{tikzpicture}
 
