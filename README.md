@@ -1,8 +1,18 @@
 # ros_timeline
 
-This repo consists of a `.tex` file that generates a dependency graph for Ubuntu, Gazebo, and Ignition with the versions of ROS and ROS2.
+Timelines of Ubuntu, ROS / ROS 2, Gazebo Classic and Gazebo (Ignition) releases.
 
-![ROS Timeline Dependency Graph](ros_timeline.png)
+### Releases only
+
+Source: [`ros-timeline.tex`](ros-timeline.tex)
+
+![ROS Timeline](ros_timeline.png)
+
+### With support / EOL windows
+
+Source: [`ros-timeline-eol.tex`](ros-timeline-eol.tex)
+
+![ROS Timeline with EOL](ros_timeline_eol.png)
 
 ## Background
 
@@ -10,34 +20,30 @@ The initial project was created by [**IamPhytan**](https://github.com/IamPhytan)
 
 ## Features
 
-- Visualization of compatible Ubuntu versions with ROS and ROS2.
-- Addition of Gazebo and Ignition dependencies with respect to ROS/ROS2 and Ubuntu.
+- Release timeline for Ubuntu, ROS 1, ROS 2, Gazebo Classic and Gazebo / Ignition
+- Optional variant with support windows and EOL years (active vs past)
 
-## Editing Tools
+## Compile
 
-The graph was edited with:
+Open either `.tex` file in Overleaf / a local LaTeX editor and compile with XeLaTeX, or:
 
-- An online LaTeX editor, Overleaf.
+```bash
+xelatex ros-timeline.tex
+xelatex ros-timeline-eol.tex
+```
 
-## Instructions
+Then convert PDF → PNG if needed (`pdftoppm`, ImageMagick, etc.).
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/robotcopper/ros_timeline.git
-    cd ros_timeline
-    ```
-
-2. **Compile the LaTeX file**:
-    - Open the `ros_timeline.tex` file in your LaTeX editor.
-    - Compile the file to generate the PDF.
-
-3. **View the result**:
-    - The generated PDF file will contain the dependency graph and can be viewed with any PDF reader.
+| Source | Output |
+|--------|--------|
+| `ros-timeline.tex` | releases only |
+| `ros-timeline-eol.tex` | releases + support / EOL |
 
 ## Project Structure
 
-- `ros_timeline.tex`: The main file containing the LaTeX code to generate the graph.
-- `assets`: The folder containing all the illustrations.
+- `ros-timeline.tex` — releases only
+- `ros-timeline-eol.tex` — with support / EOL
+- `assets/` — logos
 
 ## Acknowledgements
 
@@ -46,5 +52,3 @@ Thanks to **IamPhytan** for the initial work on the project.
 ## License
 
 The modifications made to **IamPhytan**'s work are licensed under the [BSD 3-Clause License](LICENSE).
-
----
